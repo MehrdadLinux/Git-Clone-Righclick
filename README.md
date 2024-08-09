@@ -3,10 +3,12 @@ Add git clone to your context menu or right-click mouse operation
 
 How do it faster
 Copy this script and save it in file
-```
-  #!/bin/bash
-  clip=$(xclip -o -selection clipboard)
-  git clone $clip $PWD # use $PWD for open here
+``` bash
+#!/bin/bash
+
+clip=$(xclip -o -selection clipboard)
+folder_name=$(echo "$clip" | grep -oP '(?<=\/)[^\/]+(?=\.git)')
+git clone "$clip" "$PWD/$folder_name"
 ```
 
 Gnome scripts
