@@ -1,0 +1,10 @@
+#!/bin/bash
+clip=$(xclip -o -selection clipboard)
+folder_name=$(echo "$clip" | grep -oP '(?<=\/)[^\/]+(?=\.git)')
+git clone "$clip" "$PWD/$folder_name"
+if [ $? -eq 0 ]; then
+    zenity --info --title="Git Clone" --text="Clone Git Repositoy:\n $clip  \n To $folder_name \n Done successfully"
+else
+    zenity --error --title="Git Clone" --text="Your clone path is : \n $clip \n So stutus is $? \n Clone  done failed"
+fi
+
