@@ -9,6 +9,11 @@ Copy this script and save it in file
 clip=$(xclip -o -selection clipboard)
 folder_name=$(echo "$clip" | grep -oP '(?<=\/)[^\/]+(?=\.git)')
 git clone "$clip" "$PWD/$folder_name"
+if [ $? -eq 0 ]; then
+    zenity --info --title="Git Clone" --text="Clone done successfully"
+else
+    zenity --info --title="Git Clone" --text="Clone done failed"
+fi
 ```
 
 Gnome scripts
