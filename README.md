@@ -19,7 +19,7 @@
 # Linux_Righclick_Menu_Scripts
 A collection of scripts for lazy people :D
 
-# how-to-use
+# How To Use
 Add this scripts to desktop environment file manager
 <details><summary><b>Show instructions</b></summary>
     
@@ -43,6 +43,7 @@ Do you have a question?
 
 > [!TIP]
 > Right click on any script and select an icon for it. The icons are available in the icon folder
+> The scripts do not have .sh extension because when they are placed in the menu, the name becomes long. I removed it because it is not necessary. You can change the name.
 
 > [!IMPORTANT]
 > dot forget to  chmod a+x [yourscript]
