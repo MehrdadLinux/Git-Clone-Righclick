@@ -18,9 +18,11 @@
 
 # Linux_Righclick_Menu_Scripts
 A collection of scripts for lazy people :D
+gitclone : clone repo on your system
+Jupiter : open jupyterlab in your folder
 
 # How To Use
-Add this scripts to desktop environment file manager
+Add these scripts to desktop environment file manager
 <details><summary><b>Show instructions</b></summary>
     
   ```
