@@ -18,9 +18,10 @@
 
 # Linux_Righclick_Menu_Scripts
 A collection of scripts for lazy people :D
-- gitclone : clone repo on your system
-  - ![(https://raw.githubusercontent.com/mljar/supertree/main/media/supertree2.gif) ](https://raw.githubusercontent.com/MehrdadLinux/Linux_Righclick_Menu_Scripts/main/Doc/gitclone.gif)  
-- Jupiter : open jupyterlab in your folder
+## gitclone : clone repo on your system
+  - ![(gitclone) ](https://raw.githubusercontent.com/MehrdadLinux/Linux_Righclick_Menu_Scripts/main/Doc/gitclone.gif)
+## Jupiter : open jupyterlab in your folder
+ -  ![(jupyter) ](https://raw.githubusercontent.com/MehrdadLinux/Linux_Righclick_Menu_Scripts/main/Doc/jupyter.gif)
 
 # How To Use
 Add these scripts to desktop environment file manager
