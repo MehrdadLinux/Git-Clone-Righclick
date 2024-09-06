@@ -1,10 +1,18 @@
 #!/bin/bash
+# get  git repository  from clipboard
 clip=$(xclip -o -selection clipboard)
-folder_name=$(echo "$clip" | grep -oP '(?<=\/)[^\/]+(?=\.git)')
+
+# extract repository name from path 
+# there is two way you can extract name
+#folder_name=$(echo "$clip" | grep -oP '(?<=\/)[^\/]+(?=\.git)') 
+folder_name=`basename -s .git $clip`
+
 git clone "$clip" "$PWD/$folder_name"
+
+# check status
 if [ $? -eq 0 ]; then
     zenity --info --title="Git Clone" --text="Clone Git Repositoy:\n $clip  \n To $folder_name \n Done successfully"
 else
-    zenity --error --title="Git Clone" --text="Your clone path is : \n $clip \n So stutus is $? \n Clone  done failed"
+    zenity --error --title="Git Clone" --text="Your clone path is : \n $clip \n To $folder_name \n  So stutus is $? \n Clone  done failed"
 fi
 
