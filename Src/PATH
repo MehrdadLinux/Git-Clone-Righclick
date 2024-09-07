@@ -1,2 +1,6 @@
 #!/bin/bash
-echo $PWD | xclip -selection c
+if [ -z "${NEMO_SCRIPT_SELECTED_FILE_PATHS}" ];then
+    echo $PWD | xclip -selection c
+else 
+    echo $NEMO_SCRIPT_SELECTED_FILE_PATHS | xclip -selection c
+fi
