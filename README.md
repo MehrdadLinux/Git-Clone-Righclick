@@ -10,6 +10,7 @@
   <a href="#how-to-use">How To Use</a> •
   <a href="#license">License</a>
 </p>
+
 # Requirements
 - xclip
 # Linux_Righclick_Menu_Scripts
