@@ -1,6 +1,6 @@
 
 <h1 align="center">
-  Linux Right click Menu Scripts
+    ${\color{red}Linux}$ ${\color{green}Right click Menu }$ ${\color{red}Scripts}$
   <br>
 </h1>
 
