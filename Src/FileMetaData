@@ -1,0 +1,18 @@
+#!/bin/bash
+function show_info() {
+    # Read the file paths
+    file_paths="$NEMO_SCRIPT_SELECTED_FILE_PATHS"
+    
+    # Loop through each selected file (in case there are multiple)
+    while IFS= read -r file; do
+        # Pass each file to exiftool, handling spaces correctly with quotes
+        exiftool "$file"
+    done <<< "$file_paths"
+
+    read -r -p "PLEASE PRESS ENTER TO EXIT! Waiting..."
+}
+
+export -f show_info
+
+# Open gnome-terminal and call the show_info function
+gnome-terminal --title="Your File MetaData..." --wait -- bash -c 'show_info'
