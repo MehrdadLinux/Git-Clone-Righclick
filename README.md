@@ -5,6 +5,7 @@
 </h1>
 
 <h4 align="center">A collection of scripts for lazy people :D </h4>
+<h5 align="center">Automating actions in Nautilus (GNOME's file manager) with scripts  </h5>
 
 <p align="center">
   <a href="#how-to-use">How To Use</a> •
@@ -56,6 +57,10 @@ Do you have a question?
 > You can customize the scripts according to your needs
 
 :+1: This change looks great - it's ready to use! :shipit:
+
+# Resource
+- [NautilusScriptsHowto](https://help.ubuntu.com/community/NautilusScriptsHowto)
+- [Nautilus Scripts](https://www.gnome-look.org/browse?cat=126&ord=latest)
 
 # License
 
