@@ -14,6 +14,9 @@
 
 # Requirements
 - xclip
+- exiftool
+- git
+- jupyter-lab
 # Linux_Righclick_Menu_Scripts
 A collection of scripts for lazy people :D
 ## gitclone : clone repo on your system
